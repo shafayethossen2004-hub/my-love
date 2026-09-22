@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌹 Rose Blooming from Code</title>
+    <meta name="description" content="A single div transforms into a beautiful blooming 3D rose.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;500;700&family=Fira+Code:wght@500&family=Dancing+Script:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=love">
+</head>
+
+<body>
+    <svg width="0" height="0" style="position: absolute;">
+        <defs>
+            <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ff6b8b" />
+                <stop offset="100%" stop-color="#ff0044" />
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <div class="vignette"></div>
+
+
+    <div class="spotlight"></div>
+    <div class="ambient-light" id="ambientLight"></div>
+
+    <div class="trigger-overlay" id="triggerOverlay">
+        <div class="glass-card">
+            <div class="card-glow"></div>
+            <div class="rose-icon">🌹</div>
+            <h2 class="title">Loading Love</h2>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loadingBar"></div>
+            </div>
+            <p class="status-text" id="statusText">Ready to compile...</p>
+            <button class="start-button" id="startButton" disabled>
+                <span class="btn-text">Faru Tap to Bloom for Love ❤</span>
+                <span class="btn-shine"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="scene">
+        <div class="rose-wrapper" id="roseWrapper">
+            <div class="stem-group">
+                <div class="stem" id="stem">
+                    <div class="stem-highlight"></div>
+                </div>
+                <div class="thorn thorn-1" id="thorn1"></div>
+                <div class="thorn thorn-2" id="thorn2"></div>
+                <div class="leaf leaf-left" id="leafLeft">
+                    <div class="leaf-vein"></div>
+                </div>
+                <div class="leaf leaf-right" id="leafRight">
+                    <div class="leaf-vein"></div>
+                </div>
+            </div>
+
+            <div class="calyx" id="calyx"></div>
+
+            <div class="rose-head" id="roseHead">
+                <div class="rose-glow"></div>
+                <div class="rose-glow-inner"></div>
+            </div>
+        </div>
+    </div>
+
+    <button class="music-toggle" id="musicToggle" aria-label="Toggle Music">
+        <span class="music-icon">🔊</span>
+    </button>
+
+    <div class="end-text" id="endText">
+        <p class="romantic-message">Every petal blooms with love</p>
+        <p class="tagline" id="tagline">for Love ❤</p>
+        <button class="letter-btn" id="letterBtn">
+            <span class="letter-btn-icon">💌</span> Read My Note Faru jaan
+        </button>
+        <span class="rose-emoji">🌹</span>
+    </div>
+
+    <div class="letter-overlay" id="letterOverlay">
+        <div class="letter-card">
+            <button class="close-letter-btn" id="closeLetterBtn" aria-label="Close Note">✕</button>
+            <div class="letter-content">
+                <p class="letter-salutation">Dear Love,</p>
+                <p class="letter-body">
+                    Every single line of this code was written with you in my heart. Just like this digital rose, my love for you blooms uniquely, growing stronger and more beautiful with every passing moment.
+                </p>
+                <p class="letter-body">
+                    You are the brightness in my thoughts, the rhythm in my heart, and the warmth in my life. This rose is a small reflection of my feelings—timeless, true, and forever yours.
+                </p>
+                <p class="letter-signature">Yours forever bby, ❤</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="fallingPetals"></div>
+
+    <script src="script.js?v=love"></script>
+</body>
+
+</html>
